@@ -2,22 +2,35 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@font-face {
-  font-family: 'DOOMFont';
-  src: url('/fonts/doom.woff2') format('woff2');
-}
-
 body {
-  font-family: 'DOOMFont', sans-serif;
-  background-color: #1A1A1A;
-  color: #FFA500;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #000;
+  color: #8B0000;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAECElEQVRoge2aTW8bVRSGn3Nm7IyTNE3S0jRN01JKaRFCQmJDxQZWsGDBjg07/gBCYoX4BSxYI/ELWLJkA0gVElJXqEIUKoFE2yS0SZMmTj6cxJ6Zw8J2GrtjJ/aMPY5EvNLV+F7f+z7n3I/33qOstRZBKDVEvHCON0sPGSgJKR0nWjFcWjV8dH9AlZLgJRQRYywrTc25OxZjLOWCopBXKDUcgUzrWjTWcv2x5cLPinrTUsgpzr+mOHtKBSMSxlqMgVpDI6Ck4xfW2u6NtZbNpuHrW5qrfxo2m4ZqSVEpKEo5hVKKOw2DnRSRMNZy455ldcNQLSlKBUUxryJv5vqK5pvbmutrhlJeUcorfvnH8OC/AW/PKxQ6vCKhXWut5eaq4c4/A+pNQzGvKBfUxDe/UTdcXdY82DCUcopt+YMVy9pGk3fPFABFQxu+vWNYfmKoFhXlgiIfkFBaa7n6l+HmquXUjOL1OUWtOb7ynSQEcGrGcv6s4sFGk+9/0zx8Zrj4Zp5Srt8t+9Zaa/nloeHGquXcKzO8Nef2mPuJAJyeVXzwtuLxM8O3tzWPnxk+fLtApTBaZOQcMcayum64fF9zZrbIW6cLKDWdQxOJAJw5ofjkXYWxiq9uNVh5Yri4VKCYGy4ycmuttVy+1+DR0wZvzOeYKaVzSI4lAnB6VvHpuxVKefiynuP+E8Onb+UpDIkMjYi1lqt/NHi0PuDsXJGZcnqHJCICMFdRXFjKYbRiYFN0MoaIGGO5dKfO2rMBZ+dKVMuZPBMJEQHPJZ8t5bDWYq2dXGSz3uSrm3U2aoOJYn8cJhIBmK0oLpzLAZpvbmlW/n1ZZGhEjLF8f3eTtc0G5xYrVErZPBNJEfE4NaP4+GyBvFI0tOHLG5qrfxo2G4ZyQVHOK3JqRES0Nny/vMn6VoNzr1SYKWXzTKRFBDzXfH9JMVNSrG1pLt3RrG5oSnlFKTc8R7TWXFnerIm4VjwRgNmK4pN3PNfSxnLlvmZ9y1AtKkqFHZHQEenHfiIAp2YUF5cU9x5rLt+z1JqGckFRyI3IkX1EYP+OFXOKjy8oqiXF9RXNvXVDtagoFxSqLyKhRQaJAMxVFOfPKh5uGH78XfNkYCnlFcV8WkSstSMPe7+OFfKKD84pfn1k+OmB5kkNSnlFIZcGkRERGXXYB3WsN+YV5UKO5ceW9ZqhWvJyJGrXGhsRfyKzZc/iHzctT2uGSlFRzPu5NpHIJHkySMcqFxRn5hVrW5qnW4ZKyTs3UZFxh31Yx8qp/+dVQxtKeUUh5x2OyLvWpHkyqGPFn1eTdq1pDvuwjpXkvzQdkXHyZL+OFYXErtXvsA/rWFE5ckSOHJEjR+TIETlyRI4ckSNH5MgROXJEjhyR/wDcBKMytdKJ6QAAAABJRU5ErkJggg==');
 }
 
 .btn {
   @apply px-4 py-2 bg-red-800 text-orange-500 font-bold rounded hover:bg-red-700 transition-colors duration-200;
+  text-shadow: 2px 2px #000;
+  border: 2px solid #FFA500;
 }
 
 .loading-spinner {
-  @apply w-12 h-12 border-4 border-orange-500 rounded-full animate-spin;
-  border-top-color: transparent;
+  @apply w-12 h-12 border-4 border-red-800 rounded-full animate-spin;
+  border-top-color: #FFA500;
+}
+
+.doom-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #8B0000;
+  box-shadow: 0 0 10px #FFA500;
+}
+
+.doom-title {
+  text-shadow: 3px 3px #000;
+  color: #FFA500;
+}
+
+.doom-text {
+  text-shadow: 1px 1px #000;
 }
