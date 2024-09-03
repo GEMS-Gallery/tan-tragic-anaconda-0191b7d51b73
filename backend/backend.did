@@ -1,0 +1,4 @@
+service : {
+  getGameHistory: () -> (text) query;
+  updateGameHistory: (text) -> ();
+}
